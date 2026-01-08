@@ -3,8 +3,8 @@ import React from 'react'
 const FlashCards = () => {
   return (
     <div className="mt-10 px-3 ">
-      <div className="flashcard flex flex-col p-4 justify-between border-1 bg-[#0D1A2D] w-[400px] h-[350px] rounded-3xl">
-        <div className="emo w-28 h-28 "><img className=" object-fit p-1" src=".\public\Assests\table-court-home.png" alt=""/></div>
+      <div className="flashcard flex flex-col p-4 justify-between border-1 bg-[#0D1A2D] w-[420px] h-[360px] rounded-3xl">
+        <div className="emo w-40 h-40 pl-0"><img className=" object-cover " src=".\Assests\table-court-home.png" alt=""/></div>
         <div className="para mt-1 pb-7 text-xl"><span className="text-white">Professional hard courts</span><br/><span className="text-[#647387]">with tournament-grade</span><br/><span className="text-[#647387]">lighting & climate control---</span> <br/> <span className="text-[#647387]"> play in</span> <span className="text-white"> perfect conditons,</span><br/><span className="text-white">in any season.</span> 
         </div>
         <div className="btn-switch flex gap-4 pb-3">
