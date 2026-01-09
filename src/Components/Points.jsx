@@ -1,11 +1,20 @@
 import React from 'react'
 
-const Points = () => {
-  return (
-    <div>
-      <div className="point w-3.5 h-3.5 bg-sky-500 rounded-full"></div>
-    </div>
-  )
-}
+const Point = ({ count }) => {
+  let dots = [];
 
-export default Points
+  for (let i = 0; i < count; i++) {
+    dots.push(
+      <div
+        key={i}
+        className="point w-3.5 h-3.5 bg-sky-500 rounded-full"
+      ></div>
+    );
+  }
+
+  return <div className="flex gap-2">{dots}</div>;
+};
+
+export default Point;
+
+// export default Points

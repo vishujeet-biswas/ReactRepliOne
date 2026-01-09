@@ -4,7 +4,7 @@ import Points from './Points'
 const FlashCard3 = () => {
   return (
     <div className="mt-10">
-      <div className="flashcard3 flex flex-col justify-around border w-[420px] h-[360px] bg-[#F6F8FC] rounded-3xl pl-7">
+      <div className="flashcard3 flex flex-col justify-around w-[420px] h-[360px] bg-[#F6F8FC] rounded-3xl pl-7">
 
         <div className="flashtext flex flex-col gap-0.5">
 
@@ -17,16 +17,18 @@ const FlashCard3 = () => {
 
         </div>
 
-        <div className="points flex items-center justify-between gap-3 border">
+        <div className="points flex items-center justify-between gap-4 pr-10 ">
 
-          <div className="point1 border w-[50%] ">
+          <div className="point1 w-[50%] ">
             <h4>Beginner</h4><br/>
             <h4>Intermediate</h4><br/>
             <h4>Advanced</h4>
           </div>
 
-           <div className="point2 border">
-            <Points />
+           <div className="point2 flex flex-col justify-around mx-auto h-full gap-4 pr-3">
+            <Points count={10} />
+            <Points count={8} />
+            <Points count={7} />
           </div>
 
           <div className="number">
